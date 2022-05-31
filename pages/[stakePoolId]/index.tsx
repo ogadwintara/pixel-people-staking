@@ -439,7 +439,7 @@ function Home() {
                         )
                       ) /
                         rewardDistributorData.data.parsed.rewardDurationSeconds.toNumber()) *
-                      86400 *
+                      86000 *
                       (rewardDistributorData.data.parsed.defaultMultiplier.toNumber() /
                         10 **
                           rewardDistributorData.data.parsed.multiplierDecimals)

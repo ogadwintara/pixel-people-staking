@@ -38,9 +38,9 @@ export const defaultSecondaryColor = 'rgba(29, 78, 216, 255)'
 export const stakePoolMetadatas: StakePoolMetadata[] = [
   {
     name: 'stake',
-    displayName: 'ApeFood',
+    displayName: 'Stake Your ApeFood',
     stakePoolAddress: new PublicKey(
-      'BdqcbcwaX5YpQPDLh9m9u89QH46WXcnQB5r7vK3h54U4'
+      '5d95j6oKikwbLfB1EeHGZMzNk5UrKoKaqPJgD23kBfhi'
     ),
     websiteUrl: 'https://apefood.club/',
     receiptType: ReceiptType.Original,

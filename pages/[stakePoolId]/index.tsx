@@ -475,23 +475,6 @@ function Home() {
                         {rewardMintInfo.data.tokenListData?.name ?? '???'}
                       </div>
                       <div className="text-xs text-gray-500">
-                        <a
-                          target={'_blank'}
-                          href={pubKeyUrl(
-                            rewardDistributorData.data.pubkey,
-                            environment.label
-                          )}
-                        >
-                          {shortPubKey(rewardDistributorData.data.pubkey)}
-                        </a>{' '}
-                        {rewardDistributorTokenAccountData.data
-                          ? formatMintNaturalAmountAsDecimal(
-                              rewardMintInfo.data.mintInfo,
-                              rewardDistributorTokenAccountData.data.amount,
-                              6
-                            )
-                          : ''}{' '}
-                        Left
                       </div>
                     </>
                   )}
@@ -531,20 +514,6 @@ function Home() {
               </div>
 
               <div className="flex flex-row">
-                <button
-                  onClick={() => setShowAllowedTokens(!showAllowedTokens)}
-                  className="text-md mr-5 inline-block rounded-md bg-white bg-opacity-5 px-4 py-1 hover:bg-opacity-10 focus:outline-none"
-                >
-                  {showAllowedTokens ? 'Hide' : 'Show'} Allowed Tokens
-                </button>
-                <button
-                  onClick={() => {
-                    setShowFungibleTokens(!showFungibleTokens)
-                  }}
-                  className="text-md inline-block rounded-md bg-white bg-opacity-5 px-4 py-1 hover:bg-opacity-10"
-                >
-                  {showFungibleTokens ? 'Show NFTs' : 'Show FTs'}
-                </button>
               </div>
             </div>
             {showAllowedTokens && (
@@ -560,7 +529,7 @@ function Home() {
                   </div>
                 ) : (filteredTokens || []).length == 0 ? (
                   <p className="text-gray-400">
-                    No allowed tokens found in wallet.
+                    No ApeFood found in wallet.
                   </p>
                 ) : (
                   <div
@@ -777,7 +746,7 @@ function Home() {
                 <span className="mr-1 inline-block">
                   {loadingStake && <LoadingSpinner height="25px" />}
                 </span>
-                <span className="my-auto">Stake Tokens</span>
+                <span className="my-auto">Stake ApeFood</span>
               </button>
             </div>
           </div>
@@ -836,7 +805,7 @@ function Home() {
                     <div className="h-[200px] animate-pulse rounded-lg bg-white bg-opacity-5 p-10"></div>
                   </div>
                 ) : stakedTokenDatas.data?.length === 0 ? (
-                  <p className="text-gray-400">No tokens currently staked.</p>
+                  <p className="text-gray-400">No ApeFood currently staked.</p>
                 ) : (
                   <div
                     className={
@@ -1098,7 +1067,7 @@ function Home() {
                   <span className="mr-1 inline-block">
                     {loadingUnstake ? <LoadingSpinner height="25px" /> : ''}
                   </span>
-                  <span className="my-auto">Unstake Tokens</span>
+                  <span className="my-auto">Unstake ApeFood</span>
                 </button>
               </MouseoverTooltip>
               {rewardDistributorData.data &&

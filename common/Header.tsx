@@ -82,7 +82,7 @@ export const Header = () => {
               <img className="h-[35px]" src={stakePoolMetadata?.imageUrl} />
             ) : (
               <TitleText>
-                {stakePoolMetadata?.displayName || 'Cardinal'} Staking UI
+                {stakePoolMetadata?.displayName || 'ApeFood'} Staking
               </TitleText>
             )}
           </a>
@@ -122,19 +122,6 @@ export const Header = () => {
                 }
               >
                 <p className="my-auto mr-10 hover:cursor-pointer">Stake</p>
-              </div>
-              <div
-                onClick={() =>
-                  router.push(
-                    `/admin${
-                      ctx.environment.label !== 'mainnet-beta'
-                        ? `?cluster=${ctx.environment.label}`
-                        : ''
-                    }`
-                  )
-                }
-              >
-                <p className="my-auto mr-10 hover:cursor-pointer">Admin</p>
               </div>
             </>
           )}

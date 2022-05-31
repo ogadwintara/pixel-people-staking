@@ -1,6 +1,6 @@
 {
-  "short_name": "Cardinal",
-  "name": "Cardinal Staking",
+  "short_name": "ApeFood",
+  "name": "ApeFood Staking",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "/nana.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "/nana.png",
       "sizes": "512x512",
       "type": "image/png"
     }

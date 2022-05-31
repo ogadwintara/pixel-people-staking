@@ -504,7 +504,7 @@ function Home() {
             <div className="mt-2 flex w-full flex-row justify-between">
               <div className="flex flex-row">
                 <p className="mb-3 mr-3 inline-block text-lg">
-                  Select Your Tokens
+                  Select Your ApeFood
                 </p>
                 <div className="inline-block">
                   {userTokenAccounts.refreshing && userTokenAccounts.loaded && (
@@ -761,7 +761,7 @@ function Home() {
             <div className="mb-5 flex flex-row justify-between">
               <div className="mt-2 flex flex-row">
                 <p className="mr-3 text-lg">
-                  View Staked Tokens{' '}
+                  View Staked ApeFood{' '}
                   {stakedTokenDatas.loaded &&
                     stakedTokenDatas.data &&
                     `(${stakedTokenDatas.data.length})`}

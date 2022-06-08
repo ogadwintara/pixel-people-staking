@@ -373,7 +373,7 @@ function Home() {
     <div style={{ background: stakePoolMetadata?.colors?.primary }}>
       <Head>
         <title>Pixel People Staking</title>
-        <meta name="description" content="Earn BNANAS with your nana." />
+        <meta name="description" content="Stake your Pixel people!" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

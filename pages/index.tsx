@@ -77,9 +77,9 @@ function Home() {
   return (
     <div>
       <Head>
-        <title>ApeFood Staking</title>
+        <title>Pixel People Staking</title>
         <meta name="description" content="stake your banana" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <div>

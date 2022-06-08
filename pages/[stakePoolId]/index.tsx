@@ -372,21 +372,21 @@ function Home() {
   return (
     <div style={{ background: stakePoolMetadata?.colors?.primary }}>
       <Head>
-        <title>ApeFood Staking</title>
+        <title>Pixel People Staking</title>
         <meta name="description" content="Earn BNANAS with your nana." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Header />
       <div className={`container mx-auto w-full`}>
         {!stakePool && stakePoolLoaded ? (
-          <div className="mx-5 mb-5 rounded-md border-[1px] border-yellow-500 bg-yellow-500 bg-opacity-40 p-4 text-center text-lg font-semibold">
+          <div className="mx-5 mb-5 rounded-md bg-[#0047d9] p-4 text-center text-lg font-semibold">
             Stake pool not found
           </div>
         ) : (
           !wallet.connected && (
             <div
-              className="mx-5 mb-5 cursor-pointer rounded-md border-[1px] border-yellow-500 bg-yellow-500 bg-opacity-40 p-4 text-center text-lg font-semibold"
+              className="mx-5 mb-5 cursor-pointer rounded-md bg-[#0047d9] p-4 text-center text-lg font-semibold"
               onClick={() => walletModal.setVisible(true)}
             >
               Connect wallet to continue
@@ -504,7 +504,7 @@ function Home() {
             <div className="mt-2 flex w-full flex-row justify-between">
               <div className="flex flex-row">
                 <p className="mb-3 mr-3 inline-block text-lg">
-                  Select Your ApeFood
+                  Select Your Pixel People
                 </p>
                 <div className="inline-block">
                   {userTokenAccounts.refreshing && userTokenAccounts.loaded && (
@@ -529,7 +529,7 @@ function Home() {
                   </div>
                 ) : (filteredTokens || []).length == 0 ? (
                   <p className="text-gray-400">
-                    No ApeFood found in wallet.
+                    No Pixel People found in wallet.
                   </p>
                 ) : (
                   <div
@@ -746,7 +746,7 @@ function Home() {
                 <span className="mr-1 inline-block">
                   {loadingStake && <LoadingSpinner height="25px" />}
                 </span>
-                <span className="my-auto">Stake ApeFood</span>
+                <span className="my-auto">Stake Pixel People</span>
               </button>
             </div>
           </div>
@@ -761,7 +761,7 @@ function Home() {
             <div className="mb-5 flex flex-row justify-between">
               <div className="mt-2 flex flex-row">
                 <p className="mr-3 text-lg">
-                  View Staked ApeFood{' '}
+                  View Staked Pixel People{' '}
                   {stakedTokenDatas.loaded &&
                     stakedTokenDatas.data &&
                     `(${stakedTokenDatas.data.length})`}
@@ -805,7 +805,7 @@ function Home() {
                     <div className="h-[200px] animate-pulse rounded-lg bg-white bg-opacity-5 p-10"></div>
                   </div>
                 ) : stakedTokenDatas.data?.length === 0 ? (
-                  <p className="text-gray-400">No ApeFood currently staked.</p>
+                  <p className="text-gray-400">No Pixel People currently staked.</p>
                 ) : (
                   <div
                     className={
@@ -1067,7 +1067,7 @@ function Home() {
                   <span className="mr-1 inline-block">
                     {loadingUnstake ? <LoadingSpinner height="25px" /> : ''}
                   </span>
-                  <span className="my-auto">Unstake ApeFood</span>
+                  <span className="my-auto">Unstake Pixel People</span>
                 </button>
               </MouseoverTooltip>
               {rewardDistributorData.data &&

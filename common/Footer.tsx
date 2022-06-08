@@ -2,8 +2,8 @@ import { darken, lighten } from 'polished'
 import { FaDiscord, FaGithub, FaMedium, FaTwitter } from 'react-icons/fa'
 
 const SOCIALS = {
-  discord: { icon: <FaDiscord />, link: 'https://discord.gg/VX5vRNDmK2' },
-  twitter: { icon: <FaTwitter />, link: 'https://twitter.com/apefoodnft' },
+  discord: { icon: <FaDiscord />, link: 'https://discord.gg/BBNAs3ctBd' },
+  twitter: { icon: <FaTwitter />, link: 'https://twitter.com/ItsWilliam77' },
 }
 
 export const Footer = ({
@@ -60,7 +60,7 @@ export const Footer = ({
         style={{ borderColor: lighten(0.2, bgColor) }}
       >
         <div className="flex items-center justify-center gap-2 text-gray-400">
-          ApeFood
+          Pixel People
         </div>
         <div className="flex gap-4 text-gray-200">
           {Object.entries(SOCIALS).map(([id, { icon, link }]) => {

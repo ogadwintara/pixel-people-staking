@@ -38,19 +38,19 @@ export const defaultSecondaryColor = 'rgba(29, 78, 216, 255)'
 export const stakePoolMetadatas: StakePoolMetadata[] = [
   {
     name: 'stake',
-    displayName: 'Stake Your ApeFood',
+    displayName: 'Stake Your Pixel People',
     stakePoolAddress: new PublicKey(
-      '5d95j6oKikwbLfB1EeHGZMzNk5UrKoKaqPJgD23kBfhi'
+      'F8tAeWgdSsHeBsQDy8tfs9eyfv5Nbgu4SQ5bTDvzTKMm'
     ),
-    websiteUrl: 'https://apefood.club/',
+    websiteUrl: 'https://discord.gg/BBNAs3ctBd',
     receiptType: ReceiptType.Original,
-    maxStaked: 164,
-    imageUrl: 'apefood.jpg',
+    maxStaked: 300,
+    imageUrl: 'solve.png',
     colors: {
       primary: '#1a1b20',
-      secondary: '#FFF886',
-      accent: '#D5D2AF',
-      fontColor: '#000000',
+      secondary: '#0047D9',
+      accent: '#00278B',
+      fontColor: 'white',
     },
   },
 ]

@@ -78,7 +78,7 @@ function Home() {
     <div>
       <Head>
         <title>Pixel People Staking</title>
-        <meta name="description" content="stake your banana" />
+        <meta name="description" content="Stake your Pixel People!" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

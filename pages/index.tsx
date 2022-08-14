@@ -77,8 +77,8 @@ function Home() {
   return (
     <div>
       <Head>
-        <title>Pixel People Staking</title>
-        <meta name="description" content="Stake your Pixel People!" />
+        <title>TheSuperSOL Staking</title>
+        <meta name="description" content="Stake your TheSuperSOL!" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

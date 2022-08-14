@@ -44,6 +44,12 @@ export const stakePoolMetadatas: StakePoolMetadata[] = [
       '8AoLaycYiegJhYedzcNAS3hohMaCtrjnShV2kUBbkSpH'
     ),
     websiteUrl: 'https://thesupersol.net/',
+    links: [
+      {
+        text: 'Home',
+        value: 'https://thesupersol.net',
+      },
+    ],
     receiptType: ReceiptType.Original,
     maxStaked: 1200,
     imageUrl: 'https://raw.githubusercontent.com/ogadwintara/SOSTOKEN/main/logo192.png',

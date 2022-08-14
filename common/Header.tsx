@@ -82,7 +82,7 @@ export const Header = () => {
               <img className="h-[35px]" src={stakePoolMetadata?.imageUrl} />
             ) : (
               <TitleText>
-                {stakePoolMetadata?.displayName || 'Pixel People'} Staking
+                {stakePoolMetadata?.displayName || 'TheSuperSOL'} Staking
               </TitleText>
             )}
           </a>

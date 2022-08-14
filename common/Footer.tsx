@@ -1,5 +1,6 @@
 import { darken, lighten } from 'polished'
 import { FaDiscord, FaGithub, FaMedium, FaTwitter } from 'react-icons/fa'
+import { contrastColorMode, hexColor } from './utils'
 
 const SOCIALS = {
   discord: { icon: <FaDiscord />, link: 'https://discord.gg/BBNAs3ctBd' },
@@ -22,6 +23,14 @@ export const Footer = ({
     >
       <div className="flex w-full flex-wrap items-start justify-between gap-10 py-10">
         <div className="flex items-center">
+        <img
+            className="inline-block h-[50px]"
+            src={
+              contrastColorMode(bgColor)[1]
+                ? '/solve.png'
+                : '/solve.png'
+            }
+          />
           <span className="ml-3 text-2xl font-semibold"> </span>
         </div>
         <div className="flex gap-10 self-end text-center md:gap-20">
@@ -60,7 +69,7 @@ export const Footer = ({
         style={{ borderColor: lighten(0.2, bgColor) }}
       >
         <div className="flex items-center justify-center gap-2 text-gray-400">
-          Pixel People
+          TheSuperSOL
         </div>
         <div className="flex gap-4 text-gray-200">
           {Object.entries(SOCIALS).map(([id, { icon, link }]) => {

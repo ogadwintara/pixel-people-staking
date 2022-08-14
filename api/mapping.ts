@@ -14,6 +14,7 @@ export type StakePoolMetadata = {
   receiptType?: ReceiptType
   // Optional config to hide this pool from the main page
   hidden?: boolean
+  backgroundImage?: string
   // Colors object to style the stake page
   colors?: {
     primary: string
@@ -33,24 +34,25 @@ export type StakePoolMetadata = {
   airdrops?: AirdropMetadata[]
 }
 
-export const defaultSecondaryColor = 'rgba(29, 78, 216, 255)'
+export const defaultSecondaryColor = 'rgba(4, 11, 26)'
 
 export const stakePoolMetadatas: StakePoolMetadata[] = [
   {
-    name: 'stake',
-    displayName: 'Stake Your Pixel People',
+    name: 'thesupersol',
+    displayName: 'Stake TheSuperSOL',
     stakePoolAddress: new PublicKey(
-      'F8tAeWgdSsHeBsQDy8tfs9eyfv5Nbgu4SQ5bTDvzTKMm'
+      '8AoLaycYiegJhYedzcNAS3hohMaCtrjnShV2kUBbkSpH'
     ),
-    websiteUrl: 'https://discord.gg/BBNAs3ctBd',
+    websiteUrl: 'https://thesupersol.net/',
     receiptType: ReceiptType.Original,
-    maxStaked: 300,
-    imageUrl: 'solve.png',
+    maxStaked: 1200,
+    imageUrl: 'https://raw.githubusercontent.com/ogadwintara/SOSTOKEN/main/logo192.png',
+    backgroundImage: '/8.png',
     colors: {
-      primary: '#1a1b20',
-      secondary: '#0047D9',
-      accent: '#00278B',
-      fontColor: 'white',
+      primary: '#02060f',
+      secondary: '#040b1a',
+      accent: '#ffc107',
+      fontColor: '#fffff',
     },
   },
 ]

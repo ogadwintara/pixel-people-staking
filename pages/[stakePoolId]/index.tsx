@@ -370,10 +370,13 @@ function Home() {
     )
 
   return (
-    <div style={{ background: stakePoolMetadata?.colors?.primary }}>
+    <div style={{
+      background: stakePoolMetadata?.colors?.primary,
+      backgroundImage: `url(${stakePoolMetadata?.backgroundImage})`,
+    }}>
       <Head>
-        <title>Pixel People Staking</title>
-        <meta name="description" content="Stake your Pixel people!" />
+        <title>TheSuperSOL Staking</title>
+        <meta name="description" content="Stake your TheSuperSOL!" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
@@ -504,7 +507,7 @@ function Home() {
             <div className="mt-2 flex w-full flex-row justify-between">
               <div className="flex flex-row">
                 <p className="mb-3 mr-3 inline-block text-lg">
-                  Select Your Pixel People
+                  Select Your TheSuperSOL
                 </p>
                 <div className="inline-block">
                   {userTokenAccounts.refreshing && userTokenAccounts.loaded && (
@@ -529,7 +532,7 @@ function Home() {
                   </div>
                 ) : (filteredTokens || []).length == 0 ? (
                   <p className="text-gray-400">
-                    No Pixel People found in wallet.
+                    No TheSuperSOL found in wallet.
                   </p>
                 ) : (
                   <div
@@ -746,7 +749,7 @@ function Home() {
                 <span className="mr-1 inline-block">
                   {loadingStake && <LoadingSpinner height="25px" />}
                 </span>
-                <span className="my-auto">Stake Pixel People</span>
+                <span className="my-auto">Stake TheSuperSOL</span>
               </button>
             </div>
           </div>
@@ -761,7 +764,7 @@ function Home() {
             <div className="mb-5 flex flex-row justify-between">
               <div className="mt-2 flex flex-row">
                 <p className="mr-3 text-lg">
-                  View Staked Pixel People{' '}
+                  View Staked TheSuperSOL{' '}
                   {stakedTokenDatas.loaded &&
                     stakedTokenDatas.data &&
                     `(${stakedTokenDatas.data.length})`}
@@ -805,7 +808,7 @@ function Home() {
                     <div className="h-[200px] animate-pulse rounded-lg bg-white bg-opacity-5 p-10"></div>
                   </div>
                 ) : stakedTokenDatas.data?.length === 0 ? (
-                  <p className="text-gray-400">No Pixel People currently staked.</p>
+                  <p className="text-gray-400">No TheSuperSOL currently staked.</p>
                 ) : (
                   <div
                     className={
@@ -1067,7 +1070,7 @@ function Home() {
                   <span className="mr-1 inline-block">
                     {loadingUnstake ? <LoadingSpinner height="25px" /> : ''}
                   </span>
-                  <span className="my-auto">Unstake Pixel People</span>
+                  <span className="my-auto">Unstake TheSuperSOL</span>
                 </button>
               </MouseoverTooltip>
               {rewardDistributorData.data &&

@@ -432,7 +432,7 @@ function Home() {
             {rewardDistributorData.data && rewardMintInfo.data ? (
               <>
                 <div className="inline-block text-lg">
-                  <span>Rewards Rate</span>:{' '}
+                  <span>Rewards Rate $TSOS</span>:{' '}
                   <span>
                     {(
                       (Number(
@@ -475,7 +475,7 @@ function Home() {
                           rewards.data.claimableRewards,
                           6
                         )}{' '}
-                        {rewardMintInfo.data.tokenListData?.name ?? '???'}
+                        {rewardMintInfo.data.tokenListData?.name ?? '$TSOS'}
                       </div>
                       <div className="text-xs text-gray-500">
                       </div>

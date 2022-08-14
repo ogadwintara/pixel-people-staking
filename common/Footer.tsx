@@ -3,8 +3,8 @@ import { FaDiscord, FaGithub, FaMedium, FaTwitter } from 'react-icons/fa'
 import { contrastColorMode, hexColor } from './utils'
 
 const SOCIALS = {
-  discord: { icon: <FaDiscord />, link: 'https://discord.gg/BBNAs3ctBd' },
-  twitter: { icon: <FaTwitter />, link: 'https://twitter.com/ItsWilliam77' },
+  discord: { icon: <FaDiscord />, link: 'https://discord.com/invite/4xCJHDDrbs' },
+  twitter: { icon: <FaTwitter />, link: 'https://twitter.com/The_SuperSol' },
 }
 
 export const Footer = ({

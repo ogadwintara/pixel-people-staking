@@ -41,7 +41,7 @@ export const stakePoolMetadatas: StakePoolMetadata[] = [
     name: 'thesupersol',
     displayName: 'Stake TheSuperSOL',
     stakePoolAddress: new PublicKey(
-      '8AoLaycYiegJhYedzcNAS3hohMaCtrjnShV2kUBbkSpH'
+      'DNHGMhkRiFZsWXGVKHbQVctvDtK7MEvGU9u4vMQ2Qmsh'
     ),
     websiteUrl: 'https://thesupersol.net/',
     links: [

@@ -1,6 +1,7 @@
 import { AirdropMetadata } from './../common/Airdrop'
 import { PublicKey } from '@solana/web3.js'
 import { ReceiptType } from '@cardinal/staking/dist/cjs/programs/stakePool'
+import type { CSSProperties } from 'react'
 
 export type StakePoolMetadata = {
   // Name of this stake pool used as an id. Should be in lower-case kebab-case since it is used in the URL as /{name}
@@ -16,6 +17,7 @@ export type StakePoolMetadata = {
   hidden?: boolean
   backgroundImage?: string
   // Colors object to style the stake page
+  styles?: CSSProperties
   colors?: {
     primary: string
     secondary: string
@@ -39,21 +41,29 @@ export const defaultSecondaryColor = 'rgba(4, 11, 26)'
 export const stakePoolMetadatas: StakePoolMetadata[] = [
   {
     name: 'thesupersol',
-    displayName: 'Stake TheSuperSOL',
+    displayName: 'TheSuperSOL',
     stakePoolAddress: new PublicKey(
       'DNHGMhkRiFZsWXGVKHbQVctvDtK7MEvGU9u4vMQ2Qmsh'
     ),
     websiteUrl: 'https://thesupersol.net/',
     links: [
       {
-        text: 'Home',
+        text: 'HOME',
         value: 'https://thesupersol.net',
+      },
+      {
+        text: 'RAFFLE',
+        value: 'https://raffle-thesupersol.vercel.app/',
       },
     ],
     receiptType: ReceiptType.Original,
     maxStaked: 1200,
     imageUrl: 'https://raw.githubusercontent.com/ogadwintara/SOSTOKEN/main/logo192.png',
-    backgroundImage: '/8.png',
+    backgroundImage: 'https://raw.githubusercontent.com/ogadwintara/SOSTOKEN/main/8.png',
+    styles: {
+      fontFamily: 'Industry, sans-serif',
+      fontWeight: 500,
+    },
     colors: {
       primary: '#02060f',
       secondary: '#040b1a',

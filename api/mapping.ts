@@ -53,7 +53,7 @@ export const stakePoolMetadatas: StakePoolMetadata[] = [
       },
       {
         text: 'RAFFLE',
-        value: 'https://raffle-thesupersol.vercel.app/',
+        value: 'https://raffle.thesupersol.net/',
       },
     ],
     receiptType: ReceiptType.Original,

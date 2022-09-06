@@ -128,3 +128,12 @@ Simply modify `pages/[stakePoolId]/index.tsx` with your own react styling, and h
 Join our **[Discord](https://discord.gg/stX2FAYbVq)** to get technical support as you build on Cardinal.
 
 ---
+
+
+Successfully created Stake Pool. Mainnet THESUPERSOL
+
+Make sure you SAVE THE POOL ID
+
+Pool ID: 8P8GfwZ2SbqxP8KBNo5SvGajFNKEUf4yWNpaKbpfPWkv
+
+admin wallet : HLzPH6DPfjJoq6zEf863S65UUJbSMhM3ZpGwF5U3qvDx

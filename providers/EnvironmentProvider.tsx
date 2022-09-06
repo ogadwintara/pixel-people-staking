@@ -20,7 +20,7 @@ export const ENVIRONMENTS: Environment[] = [
   {
     label: 'mainnet-beta',
     primary:
-      'https://ssc-dao.genesysgo.net',
+      'https://solana--mainnet.datahub.figment.io/apikey/ea1ef8dd4df313733edb7137ffc01206',
     secondary: 'https://ssc-dao.genesysgo.net',
   },
   {
